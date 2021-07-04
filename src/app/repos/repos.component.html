@@ -13,10 +13,10 @@
             </div>
             <div class="d-flex">
                 <div class="mr-4 p-2 mt-4 border border-dark">
-                    stars: {{item.stargazers_count/1000}}k
+                    stars: {{item.stargazers_count |numberSuffix}}
                 </div>
                 <div class="mr-4 p-2 mt-4 border border-dark">
-                    issues: {{item.open_issues/1000}}k
+                    issues: {{item.open_issues}}
                 </div>
                 <div class="mr-4 mt-4">
                     {{ item.full_name}}

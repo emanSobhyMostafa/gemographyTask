@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { ReposComponent } from './repos/repos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NumberSuffixPipe } from './pipes/number-suffix.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    ReposComponent
+    ReposComponent,
+    NumberSuffixPipe
   ],
   imports: [
     BrowserModule,
