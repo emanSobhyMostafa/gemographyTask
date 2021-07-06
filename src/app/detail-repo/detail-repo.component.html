@@ -1,0 +1,24 @@
+<div class="row ">
+    <figure class=" col-3 w-50 ">
+        <img src="{{item.owner.avatar_url}}" alt="" class="rounded-circle w-50 ">
+    </figure>
+    <div class="col-9 content_width">
+        <div class="font-weight-bold">
+            {{item.name}}
+        </div>
+        <div class="mt-2">
+            {{item.description}}
+        </div>
+        <div class="d-flex">
+            <div class="mr-4 p-2 border border-dark">
+                stars: {{item.stargazers_count |numberSuffix}}
+            </div>
+            <div class="mr-4 p-2  border border-dark">
+                issues: {{item.open_issues |numberSuffix}}
+            </div>
+            <div class="mr-4 mt-4">
+                {{ item.full_name}}
+            </div>
+        </div>
+    </div>
+</div>
